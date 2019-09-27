@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+
+/* font-family: 'Source Code Pro', monospace;
+font-family: 'Fira Sans', sans-serif; */
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/helveticaneue/HelveticaNeueHv.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("/helveticaneue/HelveticaNeue\ Light.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f5f8;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.wrapper-one {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.wrapppper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 2.33%;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.back {
+  background: url(/spacefolder/image3.png);
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.layer {
+  background-color: rgba(3, 3, 3, 0.19);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-title h1 {
+  color: white;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.16);
+}
+
+.section-a-b {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.upper-section {
+  text-align: center;
+}
+
+.who-we-are-title h2 {
+  color: #495875;
+  font-weight: bold;
+}
+
+.who-we-are-title p {
+  color: #495875;
+  font-weight: lighter;
+  padding: 3%;
+}
+
+.portfolio-title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.portfolio-title h2 {
+  color: #495875;
+  font-weight: bold;
+}
+
+.company-bio {
+  border-radius: 7px;
+  padding: 3%;
+  margin-top: 38px;
+  margin-bottom: 4%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+.company-bio p {
+  font-size: 12px;
+  padding: 3%;
+  color: #495875;
+  font-weight: lighter;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1%;
+  margin-bottom: 2%;
+  border-radius: 7px;
+  background: #fff;
+
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+.company-logo {
+  width: 100%;
+  height: auto;
+  padding: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content123 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.inner-content {
+  padding: 3%;
+  padding-top: 6%;
+}
+
+.inner-content h2 {
+  margin-bottom: 2%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #21334e;
+  line-height: 1.4em;
+}
+
+.inner-content h3 {
+  margin-bottom: 3%;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  color: #8d9ebe;
+  line-height: 1.3em;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #21334e;
+  line-height: 1.3em;
+  margin-bottom: 4%;
+}
+
+.link-learn {
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  color: #e09e8b;
+  line-height: 20px;
+  margin-bottom: 6%;
+}
+
+.buttonn {
+  padding: 2%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.buttonn button {
+  width: 172px;
+  min-height: 48px;
+  background: #e09e8b;
+  color: #ffffff;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3em;
+  border-color: #e09e8b;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  .back {
+    min-height: 380px;
+  }
+  .main-title h1 {
+    font-size: 50px;
+  }
+  .who-we-are-title h2 {
+    font-size: 38px;
+  }
+  .portfolio-title h2 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main-title h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .back {
+    min-height: 480px;
+  }
+  .who-we-are-title h2 {
+    font-size: 48px;
+  }
+  .portfolio-title h2 {
+    font-size: 48px;
+  }
+  .who-we-are-title p {
+    font-size: 24px;
+  }
+  .company-bio p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .company-bio {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapppper {
+    margin: 0;
+  }
+  .back {
+    width: 1280px;
+    min-height: 642px;
+  }
+  .wrapper {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
